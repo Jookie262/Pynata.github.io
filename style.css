@@ -1,0 +1,213 @@
+/* 
+Color Code 
+#0860D9 Blue
+#D9043D Red
+#FFCF3E Yellow
+#F5A30D Orangy yellow
+#109667 Green
+#04BCD4 bright blue
+#ED52B1 Pink
+#B35CBB Purple
+#D9DBE4 Grey
+#FFFAF3 Yellowish white
+#170303 Blackish red
+#F8F8FF Ghostwhite */
+
+/* General style */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Mono";
+}
+
+/* Header Menu */
+header {
+  margin: 0;
+  padding: 10px;
+  background-color: #fffaf3;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.header-logo {
+  max-width: 150px;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.header-nav-link {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.header-nav-link:hover {
+  color: #fffaf3;
+  background-color: #b35cbb;
+}
+
+/*Main content*/
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "a b"
+    "a c";
+}
+
+.section-title {
+  margin: 0;
+  text-align: left;
+  color: black;
+  font-size: 40px;
+  padding-top: 25px;
+  grid-area: b;
+}
+
+.section-contents {
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: left;
+  color: black;
+  font-size: 20px;
+  background-color: #ffcf3e;
+  grid-area: c;
+}
+
+.section-logo {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  background-color: white;
+  grid-area: a;
+}
+
+/* Committee member styles */
+#committee-background {
+  background-color: #04bcd4;
+  padding-bottom: 25px;
+}
+
+#committee-description {
+  font-size: 15px;
+  text-align: left;
+  font-family: "IBM Plex Mono", monospace;
+  padding-bottom: 20px;
+}
+
+.committee-pictures {
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #0860d9;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5 ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: -50%, -50%;
+  text-align: center;
+}
+
+/*Footer Grid*/
+footer {
+  background-color: #170303;
+  color: #f8f8ff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 100px;
+  grid-template-areas:
+    "a b"
+    "a b"
+    "a b";
+}
+
+.footer-left {
+  background-color: #170303;
+  border: 5px solid;
+  padding: 20px;
+  text-align: center;
+  grid-area: a;
+}
+
+.footer-right {
+  background-color: #170303;
+  border: 5px solid;
+  padding: 20px;
+  text-align: center;
+  grid-area: b;
+}
+
+.footer-link {
+  text-decoration: underline;
+  color: #f8f8ff;
+}
+
+/* Bigger screen */
+@media (min-width: 600px) {
+  .header-logo {
+    max-width: 200px;
+  }
+
+  .header-nav-link {
+    display: inline;
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 900px) {
+  header {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-logo {
+    max-width: 150px;
+  }
+
+  .nav-header {
+    font-size: 25px;
+    flex-direction: right;
+    padding-right: 20px;
+  }
+
+  .header-nav-link {
+    padding: 15px;
+  }
+}
