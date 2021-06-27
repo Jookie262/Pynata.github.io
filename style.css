@@ -41,11 +41,10 @@ header {
   vertical-align: middle;
 }
 
-.header-title {
-  font-family: "Magistra Demo";
-  font-size: 30px;
-  color: rgb(85, 26, 139);
-  font-weight: 600;
+#header-logo-title {
+  max-width: 200px;
+  display: block;
+  margin: auto;
 }
 
 .header-nav-link {
@@ -122,7 +121,7 @@ header {
 /*Footer Design*/
 .footer-grid {
   font-size: 15px;
-  font-family: 'Lucida', cursive;
+  font-family: "Lucida", cursive;
   background-color: #170303;
   color: #f8f8ff;
   display: grid;
@@ -167,7 +166,7 @@ header {
 }
 
 .footer-link:hover {
- color: crimson;
+  color: crimson;
 }
 
 /*Scrolling*/
@@ -191,26 +190,36 @@ hr {
     display: inline;
     font-size: 25px;
   }
+
+  #header-logo-title {
+    max-width: 250px;
+    display: inline;
+    vertical-align: middle;
+  }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   header {
     text-align: left;
     display: flex;
-    justify-content: space-between;
   }
 
   .header-logo {
     max-width: 150px;
   }
 
+  #header-logo-title {
+    max-height: 500px;
+    margin: 0;
+  }
+
   .nav-header {
-    font-size: 25px;
-    flex-direction: right;
     padding-right: 20px;
+    margin-left: auto;
   }
 
   .header-nav-link {
     padding: 15px;
+    font-size: 30px;
   }
 }
