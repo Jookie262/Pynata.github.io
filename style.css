@@ -68,19 +68,22 @@ header {
   font-size: 40px;
   padding-left: 30px;
   padding-top: 30px;
+  color: white;
 }
 
 #committee-background {
+  background-image: linear-gradient(#B35CBB, #0860D9 );
   background-color: #04bcd4;
   padding-bottom: 25px;
 }
 
 #committee-description {
-  font-size: 15px;
+  font-size: 17px;
   text-align: left;
   font-family: "IBM Plex Mono", monospace;
   padding-bottom: 20px;
   padding-left: 30px;
+  color: white;
 }
 
 .committee-pictures {
@@ -96,7 +99,10 @@ header {
   width: 25%;
   float: left;
   background-color:#04bcd4;
+  background-image: linear-gradient(#0860D9 , #04bcd4 );
   padding-bottom: 30px;
+  max-width: 100%;
+  height: auto;
 }
 
 .row::after {
@@ -118,6 +124,7 @@ header {
   width: 250px;
   height: 250px;
   transition: 0.5s ease;
+  max-width: 100%;
 }
 
 .container:hover .overlay {
@@ -131,6 +138,12 @@ header {
   top: 40%;
   transform: -50%, -50%;
   text-align: left;
+}
+
+.committee-names {
+  text-align: center;
+  font-size: 20px;
+  color: white;
 }
 
 /*Footer Design*/
