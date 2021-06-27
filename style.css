@@ -74,48 +74,57 @@ header {
   text-align: left;
   font-family: "IBM Plex Mono", monospace;
   padding-bottom: 20px;
+  padding-left: 30px;
 }
 
 .committee-pictures {
   max-width: 100%;
-  width: 300px;
-  height: 300px;
   object-fit: cover;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-left: 60px;
   padding-top: 30px;
+  display: block;
 }
 
 .container {
   position: relative;
-  width: 300px;
+  width: 25%;
+  float: left;
+  background-color:#04bcd4;
+  padding-bottom: 30px;
+}
+
+.row::after {
+  content:"";
+  clear: both;
+  display: table;
 }
 
 .overlay {
   position: absolute;
-  bottom: 100%;
-  left: 0;
+  top: 30px;
+  bottom: 0;
+  left: 60px;
   right: 0;
+  width: 250px;
+  height: 250px;
   background-color: #0860d9;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: 0.5 ease;
+  opacity: 0;
+  width: 250px;
+  height: 250px;
+  transition: 0.5s ease;
 }
 
 .container:hover .overlay {
-  bottom: 0;
-  height: 100%;
+  opacity: 0.75;
 }
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
   transform: -50%, -50%;
-  text-align: center;
+  text-align: left;
 }
 
 /*Footer Design*/
@@ -131,6 +140,7 @@ header {
     "a b"
     "a b"
     "a b";
+  clear: both;
 }
 
 .footer-title {
