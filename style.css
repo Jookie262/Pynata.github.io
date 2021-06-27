@@ -51,43 +51,6 @@ header {
 }
 
 /*Main content*/
-.main-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-    "a b"
-    "a c";
-}
-
-.section-title {
-  margin: 0;
-  text-align: left;
-  color: black;
-  font-size: 40px;
-  padding-top: 25px;
-  grid-area: b;
-}
-
-.section-contents {
-  margin: 0;
-  font-family: "IBM Plex Mono", monospace;
-  text-align: left;
-  color: black;
-  font-size: 20px;
-  background-color: #ffcf3e;
-  grid-area: c;
-}
-
-.section-logo {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  text-align: center;
-  background-color: white;
-  grid-area: a;
-}
 
 /* Committee member styles */
 #committee-background {
@@ -174,8 +137,12 @@ footer {
 }
 
 .footer-link {
-  text-decoration: underline;
+  text-decoration: none;
   color: #f8f8ff;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
 }
 
 /* Bigger screen */
