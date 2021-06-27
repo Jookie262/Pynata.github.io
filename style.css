@@ -20,10 +20,15 @@ body {
   font-family: "IBM Plex Mono";
 }
 
+@font-face {
+  font-family: "Magicstra Demo";
+  src: url("MagicstraDemoRegular.ttf") format("truetype");
+}
+
 /* Header Menu */
 header {
   margin: 0;
-  padding: 10px;
+  padding: 5px;
   background-color: #fffaf3;
   align-items: center;
   text-align: center;
@@ -34,6 +39,13 @@ header {
   max-width: 150px;
   align-items: center;
   vertical-align: middle;
+}
+
+.header-title {
+  font-family: "Magistra Demo";
+  font-size: 30px;
+  color: rgb(85, 26, 139);
+  font-weight: 600;
 }
 
 .header-nav-link {
@@ -47,7 +59,7 @@ header {
 
 .header-nav-link:hover {
   color: #fffaf3;
-  background-color: #b35cbb;
+  background-color: rgb(85, 26, 139);
 }
 
 /*Main content*/
