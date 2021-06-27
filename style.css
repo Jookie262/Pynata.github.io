@@ -65,11 +65,31 @@ header {
 
 /* Committee member styles */
 .section-title {
-  font-size: 40px;
+  font-size: 45px;
   padding-left: 30px;
   padding-top: 30px;
   color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: solid 8px white;
 }
+
+  /*Animation for title*/
+.section-title { 
+              animation: animated-text 4s steps(14) 1s 1 normal both,
+                          animated-cursor 1000ms steps(14) infinite;
+}
+
+@keyframes animated-text {
+  from{width: 0;}
+  to{width: 370px;}
+}
+
+@keyframes animated-cursor{
+  from{border-right-color: white;}
+  to{border-right-color: transparent;}
+}
+
 
 #committee-background {
   background-image: linear-gradient(#B35CBB, #0860D9 );
@@ -145,6 +165,7 @@ header {
   font-size: 20px;
   color: white;
 }
+
 
 /*Footer Design*/
 .footer-grid {
