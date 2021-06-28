@@ -170,16 +170,17 @@ header {
 /*Footer Design*/
 .footer-grid {
   font-size: 15px;
-  font-family: "Lucida", cursive;
-  background-color: #170303;
-  color: #f8f8ff;
+  font-weight: bold;
+  font-family: "IBM Plex Mono", monospace;
+  color: #551a8b;
+  background-color: #f8f8ff;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 80px;
   grid-template-areas:
-    "a b"
-    "a b"
-    "a b";
+    "a b c"
+    "a b c"
+    "a b c";
   clear: both;
 }
 
@@ -189,21 +190,27 @@ header {
 }
 
 .footer-left {
-  background-color: #170303;
-  border: 10px solid;
-  border-right: 5px solid;
+  border-style: solid;
+  border-width: 0px 0px;
   padding: 20px;
   text-align: left;
   grid-area: a;
 }
 
-.footer-right {
-  background-color: #170303;
-  border: 10px solid;
-  border-left: 5px solid;
+.footer-middle {
+  border-style: solid;
+  border-width:0px 0px;
   padding: 20px;
   text-align: left;
   grid-area: b;
+}
+
+.footer-right {
+  border-style: solid;
+  border-width: 0px 0px;
+  padding: 20px;
+  text-align: left;
+  grid-area: c;
 }
 
 .footer-center {
@@ -212,11 +219,13 @@ header {
 
 .footer-link {
   text-decoration: none;
-  color: #f8f8ff;
+  color: #551a8b;
+  transition: 1s;
 }
 
 .footer-link:hover {
   color: crimson;
+  font-size: 20px;
 }
 
 /*Scrolling*/
@@ -225,9 +234,12 @@ html {
 }
 
 /*Line divider*/
-hr {
-  border-top: 5px #f8f8ff;
-  text-decoration: underline;
+.hr1 {
+  border-top: 1px solid #170303;
+}
+
+.hr2 {
+  border-top: 3px solid #170303;
 }
 
 /* Bigger screen */
@@ -271,5 +283,11 @@ hr {
   .header-nav-link {
     padding: 15px;
     font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-grid {
+    display: inline;
   }
 }
