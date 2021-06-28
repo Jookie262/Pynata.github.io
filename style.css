@@ -57,7 +57,7 @@ header {
 }
 
 .menu-btn {
-  position: fixed;
+  position: absolute;
   top: 140px;
   margin: 0;
   align-items: center;
@@ -132,6 +132,7 @@ header {
 }
 
 .header-nav-link {
+  color: rgb(85, 26, 139);
   display: block;
   padding: 10px;
   text-align: center;
@@ -143,6 +144,15 @@ header {
 .header-nav-link:hover {
   color: #fffaf3;
   background-color: rgb(85, 26, 139);
+}
+
+.header-nav-link:active {
+  color: #fffaf3;
+  background-color: #ed52b1;
+}
+
+.header-nav-link:visited {
+  color: #0860d9;
 }
 
 /*Main content*/
