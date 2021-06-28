@@ -154,10 +154,15 @@ header {
 
 /* Committee member styles */
 
-body{
+body {
   min-height: 100vh;
   position: relative;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: grid;
 }
+
 body::before{
   content: '';
   position: absolute;
@@ -204,7 +209,7 @@ body::before{
 #committee-background {
   background-image: linear-gradient(#b35cbb, #0860d9);
   background-color: #04bcd4;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 
 #committee-description {
@@ -263,6 +268,7 @@ body::before{
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 4px;
+  font-family: 'Poppins',sans-serif;
 }
 
 .card .text {
@@ -273,11 +279,11 @@ body::before{
   margin-top: 20px;
   color: #0860D9;
   font-weight: 200;
-  letter-spacing: 1px;
   opacity: 0;
   max-height:0;
   transition: all 0.3s ease;
   padding-left: 30px;
+  font-family: 'Poppins',sans-serif;
 }
 
 .card:hover {
@@ -294,7 +300,7 @@ body::before{
   max-height:40px;
 }
 
-/*.content .button{
+.content .button{
   width: 100%;
   display: flex;
   justify-content: center;
@@ -327,7 +333,7 @@ body::before{
 }
 input[type="radio"]{
   display: none;
-}*/
+}
 
 @media screen and (max-width: 767px) {
   .content {
