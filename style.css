@@ -131,11 +131,11 @@ header {
 }
 
 .header-nav-link {
-  color: rgb(85, 26, 139);
   display: block;
   padding: 10px;
   text-align: center;
   text-decoration: none;
+  color: rgb(85, 26, 139);
   font-weight: 600;
   font-size: 20px;
 }
