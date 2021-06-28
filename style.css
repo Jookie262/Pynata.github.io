@@ -280,24 +280,18 @@ header {
 }
 
 .footer-left {
-  border-style: solid;
-  border-width: 0px 0px;
   padding: 20px;
   text-align: left;
   grid-area: a;
 }
 
 .footer-middle {
-  border-style: solid;
-  border-width:0px 0px;
   padding: 20px;
   text-align: left;
   grid-area: b;
 }
 
 .footer-right {
-  border-style: solid;
-  border-width: 0px 0px;
   padding: 20px;
   text-align: left;
   grid-area: c;
