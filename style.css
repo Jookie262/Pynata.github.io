@@ -471,3 +471,9 @@ html {
     display: inline;
   }
 }
+
+@media (max-width: 1000px) {
+  .footer-grid {
+    display: inline;
+  }
+}
