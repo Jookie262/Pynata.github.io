@@ -17,6 +17,15 @@ Color Code
 body {
   margin: 0;
   padding: 0;
+  font-family: "Arial";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "IBM Plex Mono";
 }
 
@@ -47,6 +56,81 @@ header {
   margin: auto;
 }
 
+.menu-btn {
+  position: fixed;
+  top: 140px;
+  margin: 0;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menu-btn-hamburger {
+  align-items: center;
+  position: inherit;
+  width: 50px;
+  height: 6px;
+  background: rgb(85, 26, 139);
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn-hamburger::before,
+.menu-btn-hamburger::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 50px;
+  height: 6px;
+  background: rgb(85, 26, 139);
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn-hamburger::before {
+  transform: translateY(-16px);
+}
+
+.menu-btn-hamburger::after {
+  transform: translateY(16px);
+}
+
+/* Animate Burger Menu */
+.menu-btn.open .menu-btn-hamburger {
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+.menu-btn.open .menu-btn-hamburger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn-hamburger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* Navigation items */
+.nav-header {
+  visibility: hidden;
+  display: none;
+}
+
+.change {
+  display: initial;
+  visibility: visible;
+}
+
+.nav-item {
+  list-style-type: none;
+  padding: 10px;
+}
+
 .header-nav-link {
   display: block;
   padding: 10px;
@@ -74,25 +158,32 @@ header {
   border-right: solid 8px white;
 }
 
-  /*Animation for title*/
-.section-title { 
-              animation: animated-text 4s steps(14) 1s 1 normal both,
-                          animated-cursor 1000ms steps(14) infinite;
+/*Animation for title*/
+.section-title {
+  animation: animated-text 4s steps(14) 1s 1 normal both,
+    animated-cursor 1000ms steps(14) infinite;
 }
 
 @keyframes animated-text {
-  from{width: 0;}
-  to{width: 370px;}
+  from {
+    width: 0;
+  }
+  to {
+    width: 370px;
+  }
 }
 
-@keyframes animated-cursor{
-  from{border-right-color: white;}
-  to{border-right-color: transparent;}
+@keyframes animated-cursor {
+  from {
+    border-right-color: white;
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
-
 
 #committee-background {
-  background-image: linear-gradient(#B35CBB, #0860D9 );
+  background-image: linear-gradient(#b35cbb, #0860d9);
   background-color: #04bcd4;
   padding-bottom: 25px;
 }
@@ -118,15 +209,15 @@ header {
   position: relative;
   width: 25%;
   float: left;
-  background-color:#04bcd4;
-  background-image: linear-gradient(#0860D9 , #04bcd4 );
+  background-color: #04bcd4;
+  background-image: linear-gradient(#0860d9, #04bcd4);
   padding-bottom: 30px;
   max-width: 100%;
   height: auto;
 }
 
 .row::after {
-  content:"";
+  content: "";
   clear: both;
   display: table;
 }
@@ -165,7 +256,6 @@ header {
   font-size: 20px;
   color: white;
 }
-
 
 /*Footer Design*/
 .footer-grid {
@@ -232,10 +322,6 @@ hr {
 
 /* Bigger screen */
 @media (min-width: 600px) {
-  .header-logo {
-    max-width: 200px;
-  }
-
   .header-nav-link {
     display: inline;
     font-size: 25px;
@@ -246,6 +332,11 @@ hr {
     display: inline;
     vertical-align: middle;
   }
+
+  .menu-btn {
+    top: 50px;
+    margin: auto;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -254,22 +345,33 @@ hr {
     display: flex;
   }
 
-  .header-logo {
-    max-width: 150px;
-  }
-
   #header-logo-title {
-    max-height: 500px;
     margin: 0;
   }
 
   .nav-header {
-    padding-right: 20px;
+    padding: 0;
     margin-left: auto;
+    display: inline;
+    visibility: visible;
   }
 
   .header-nav-link {
     padding: 15px;
-    font-size: 30px;
+    font-size: 25px;
+    display: inline;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .nav-item {
+    display: inline;
+    padding: 0;
+  }
+
+  .change .open {
+    display: inline;
   }
 }
