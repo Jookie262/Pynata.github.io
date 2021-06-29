@@ -228,7 +228,7 @@ header {
   justify-content: space-between;
 }
 .main-card .cards .card{
-  width: calc(100% / 3 - 80px);
+  width: calc(100% / 3 - 100px);
   background: #FFFAF3;
   border-radius: 12px;
   padding: 30px;
