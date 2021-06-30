@@ -211,15 +211,19 @@ header {
   align-items: center;
   margin: 0 auto;
 }
+
 .container .main-card{
   display: flex;
   justify-content: center;
   width: 200%;
   transition: 1s;
+  padding-bottom: 30px;
 }
+
 #two:checked ~ .main-card{
   margin-left: -100%;
 }
+
 .container .main-card .cards{
   width: calc(100% / 2 - 10px);
   display: flex;
@@ -227,6 +231,7 @@ header {
   margin: 0 20px;
   justify-content: space-between;
 }
+
 .main-card .cards .card{
   width: calc(100% / 3 - 100px);
   background: #FFFAF3;
@@ -272,7 +277,7 @@ header {
 }
 
 .card .content .media-icons{
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   margin: 0 auto;
   opacity: 0;
@@ -283,17 +288,18 @@ header {
 
 .media-icons a{
   text-align: center;
-  line-height: 33px;
-  height: 35px;
-  width: 35px;
+  line-height: 37px;
+  height: 40px;
+  width: 40px;
   margin: 0 4px;
-  font-size: 14px;
+  font-size: 20px;
   color: #FFF;
   border-radius: 50%;
   border: 2px solid transparent;
   background: #F5A30D;
   transition: all 0.3s ease;
 }
+
 .media-icons a:hover{
   color: #F5A30D;
   background-color: #fff;
@@ -320,34 +326,43 @@ header {
   margin: 0 4px;
   cursor: pointer;
   transition: all 0.5s ease;
+  padding-top: 20px;
 }
+
 .button label.active{
   width: 35px;
 }
+
 #one:checked ~ .button .one{
   width: 35px;
 }
+
 #one:checked ~ .button .two{
   width: 15px;
 }
+
 #two:checked ~ .button .one{
   width: 15px;
 }
+
 #two:checked ~ .button .two{
   width: 35px;
 }
+
 input[type="radio"]{
   display: none;
 }
-@media (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
   .main-card .cards .card{
     margin: 20px 0 10px 0;
     width: calc(100% / 2 - 10px);
   }
 }
-@media (max-width: 600px) {
+
+@media screen and (max-width: 600px) {
   .main-card .cards .card{
-    /* margin: 20px 0 10px 0; */
+    margin: 20px 0 10px 0;
     width: 100%;
   }
 }
