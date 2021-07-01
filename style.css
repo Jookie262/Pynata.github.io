@@ -396,7 +396,7 @@ input[type="radio"]{
   font-weight: bold;
   font-family: "IBM Plex Mono", monospace;
   color: #551a8b;
-  background-color: #f8f8ff;
+  background-color: #e0e0e0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 80px;
@@ -437,6 +437,14 @@ input[type="radio"]{
   padding-bottom: 10px;
 }
 
+.footer-cr {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: black;
+  color: #f8f8ff;
+}
+
 .footer-link {
   text-decoration: none;
   color: #551a8b;
@@ -448,6 +456,52 @@ input[type="radio"]{
   font-size: 20px;
 }
 
+/* Quotes Slideshow*/
+.quote-frame {
+  height: 150px;
+  width: 800px;
+  margin: 40px auto;
+  background-color: aquamarine;
+  border-left: 10px solid darkcyan;
+  border-right: 10px solid darkcyan;
+  overflow: hidden;
+}
+
+.quote-animation {
+  height: 150px;
+  width: 3200px;
+  position: relative;
+  -webkit-animation-name: slide-animation;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  -webkit-animation-direction: alternate;
+}
+
+.quote {
+  height: 150px;
+  width: 800px;
+  position: static;
+  font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+  font-size: 40px;
+  padding: 20px;
+  text-align: left;
+  float: left;
+}
+
+@-webkit-keyframes slide-animation {
+  0% {right;: 0px}
+  11.1% {right: 0px}
+  22.2% {right: 800px}
+  33.3% {right: 800px}
+  44.4% {right: 1600px}
+  55.5% {right: 1600px}
+  66.6% {right: 800px}
+  77.7% {right: 800px}
+  88.8% {right: 0px}
+  100% {right: 0px}
+}
+
 /*Scrolling*/
 html {
   scroll-behavior: smooth;
@@ -456,10 +510,6 @@ html {
 /*Line divider*/
 .hr1 {
   border-top: 1px solid #170303;
-}
-
-.hr2 {
-  border-top: 3px solid #170303;
 }
 
 /* Bigger screen */
