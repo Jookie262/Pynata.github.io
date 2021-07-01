@@ -155,7 +155,7 @@ header {
 /* Committee member styles */
 
 .section-title {
-  font-size: 40px;
+  font-size: 41px;
   padding-left: 30px;
   padding-top: 30px;
   color: white;
@@ -166,7 +166,7 @@ header {
 
 /*Animation for title*/
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -195,15 +195,9 @@ header {
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-.container{
+.container {
   max-width: 1500px;
   width: 100%;
   overflow: hidden;
@@ -212,7 +206,7 @@ header {
   margin: 0 auto;
 }
 
-.container .main-card{
+.container .main-card {
   display: flex;
   justify-content: center;
   width: 200%;
@@ -220,11 +214,11 @@ header {
   padding-bottom: 30px;
 }
 
-#two:checked ~ .main-card{
+#two:checked ~ .main-card {
   margin-left: -100%;
 }
 
-.container .main-card .cards{
+.container .main-card .cards {
   width: calc(100% / 2 - 10px);
   display: flex;
   flex-wrap: wrap;
@@ -232,9 +226,9 @@ header {
   justify-content: space-between;
 }
 
-.main-card .cards .card{
+.main-card .cards .card {
   width: calc(100% / 3 - 100px);
-  background: #FFFAF3;
+  background: #fffaf3;
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
@@ -244,9 +238,10 @@ header {
   max-width: 400px;
   min-width: 200px;
   height: 300px;
+  opacity: 0.89;
 }
 
-.main-card .cards .card:hover{
+.main-card .cards .card:hover {
   height: 350px;
 }
 
@@ -254,7 +249,7 @@ header {
   height: 90%;
 }
 
-.cards .card .content{
+.cards .card .content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -263,47 +258,54 @@ header {
   text-align: center;
 }
 
-.card .content .img img{
+.card .content .img img {
   max-width: 100%;
   object-fit: cover;
   overflow: hidden;
   padding-bottom: 20px;
 }
 
-.card .content .name{
-  font-size: 20px;
-  font-weight: 500;
-  color: #0860D9;
+.card .content .ky img {
+  max-width: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
-.card .content .media-icons{
+
+.card .content .name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #0860d9;
+}
+
+.card .content .media-icons {
   margin-top: 20px;
   display: flex;
   margin: 0 auto;
   opacity: 0;
-  max-height:0;
+  max-height: 0;
   transition: all 0.3s ease;
   padding-top: 20px;
 }
 
-.media-icons a{
+.media-icons a {
   text-align: center;
   line-height: 37px;
   height: 40px;
   width: 40px;
   margin: 0 4px;
   font-size: 20px;
-  color: #FFF;
+  color: #fff;
   border-radius: 50%;
   border: 2px solid transparent;
-  background: #F5A30D;
+  background: #f5a30d;
   transition: all 0.3s ease;
 }
 
-.media-icons a:hover{
-  color: #F5A30D;
+.media-icons a:hover {
+  color: #f5a30d;
   background-color: #fff;
-  border-color: #F5A30D;
+  border-color: #f5a30d;
 }
 
 .main-card .cards .card:hover .media-icons {
@@ -312,13 +314,13 @@ header {
   max-height: 40px;
 }
 
-.container .button{
+.container .button {
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 20px;
 }
-.button label{
+.button label {
   height: 15px;
   width: 15px;
   border-radius: 20px;
@@ -329,39 +331,47 @@ header {
   padding-top: 20px;
 }
 
-.button label.active{
+.button label.active {
   width: 35px;
 }
 
-#one:checked ~ .button .one{
+#one:checked ~ .button .one {
   width: 35px;
 }
 
-#one:checked ~ .button .two{
+#one:checked ~ .button .two {
   width: 15px;
 }
 
-#two:checked ~ .button .one{
+#two:checked ~ .button .one {
   width: 15px;
 }
 
-#two:checked ~ .button .two{
+#two:checked ~ .button .two {
   width: 35px;
 }
 
-input[type="radio"]{
+input[type="radio"] {
   display: none;
 }
 
+#committe-img-lky {
+  transform: rotate(180deg);
+  max-width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
 @media screen and (max-width: 768px) {
-  .main-card .cards .card{
+  .main-card .cards .card {
     margin: 20px 0 10px 0;
     width: calc(100% / 2 - 10px);
   }
 }
 
 @media screen and (max-width: 600px) {
-  .main-card .cards .card{
+  .main-card .cards .card {
     margin: 20px 0 10px 0;
     width: 100%;
   }
