@@ -14,6 +14,10 @@ Color Code
 #F8F8FF Ghostwhite */
 
 /* General style */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -27,6 +31,16 @@ h4,
 h5,
 h6 {
   font-family: "IBM Plex Mono";
+}
+
+hr {
+  border-top: 1px solid #170303;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -153,7 +167,6 @@ header {
 /*Main body */
 
 /* Committee member styles */
-
 .section-title {
   font-size: 41px;
   padding-left: 30px;
@@ -162,40 +175,21 @@ header {
   white-space: nowrap;
   overflow: hidden;
   border-right: solid 8px white;
-}
-
-/*Animation for title*/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.section-title {
   animation: animated-text 4s steps(14) 1s 1 normal both,
-    animated-cursor 1000ms steps(14) infinite;
+    animated-cursor 1000ms steps(14);
 }
 
 @keyframes animated-text {
-  from {
+  0% {
+    border-right-color: white;
+    opacity: 1;
     width: 0;
   }
-  to {
-    width: 370px;
+  100% {
+    border-right: transparent;
+    width: 900px;
   }
 }
-
-@keyframes animated-cursor {
-  from {
-    border-right-color: white;
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 .container {
   max-width: 1500px;
@@ -209,7 +203,7 @@ header {
 .container .main-card {
   display: flex;
   justify-content: center;
-  width: 200%;
+  width: 100%;
   transition: 1s;
   padding-bottom: 30px;
 }
@@ -219,7 +213,7 @@ header {
 }
 
 .container .main-card .cards {
-  width: calc(100% / 2 - 10px);
+  width: calc (100% / 2 - 10px);
   display: flex;
   flex-wrap: wrap;
   margin: 0 20px;
@@ -227,7 +221,7 @@ header {
 }
 
 .main-card .cards .card {
-  width: calc(100% / 3 - 100px);
+  width: calc(100% / 4 - 100px);
   background: #fffaf3;
   border-radius: 12px;
   padding: 30px;
@@ -271,11 +265,11 @@ header {
   overflow: hidden;
 }
 
-
-.card .content .name {
-  font-size: 20px;
+.name {
+  font-size: 22px;
   font-weight: 500;
   color: #0860d9;
+  font-family: "Ubuntu";
 }
 
 .card .content .media-icons {
@@ -314,7 +308,7 @@ header {
   max-height: 40px;
 }
 
-.container .button {
+/*.container .button {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -353,7 +347,7 @@ header {
 
 input[type="radio"] {
   display: none;
-}
+}*/
 
 #committe-img-lky {
   transform: rotate(180deg);
@@ -361,20 +355,6 @@ input[type="radio"] {
   object-fit: cover;
   overflow: hidden;
   padding-top: 20px;
-}
-
-@media screen and (max-width: 768px) {
-  .main-card .cards .card {
-    margin: 20px 0 10px 0;
-    width: calc(100% / 2 - 10px);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .main-card .cards .card {
-    margin: 20px 0 10px 0;
-    width: 100%;
-  }
 }
 
 #committee-background {
@@ -386,12 +366,13 @@ input[type="radio"] {
 }
 
 #committee-description {
-  font-size: 17px;
+  font-size: 19px;
   text-align: left;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Ubuntu";
   padding-left: 30px;
   padding-top: 30px;
   color: white;
+  line-height: 31px;
 }
 
 .committee-pictures {
@@ -400,21 +381,79 @@ input[type="radio"] {
   overflow: hidden;
 }
 
+/* Quotes Slideshow*/
+.quote-frame {
+  height: auto;
+  max-width: auto;
+
+  background-color: #04bcd4;
+  overflow: hidden;
+}
+
+.quote-animation {
+  height: 250px;
+  width: 1800px;
+  position: relative;
+  animation-name: slide-animation;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-direction: alternate;
+  overflow: hidden;
+}
+
+.quote {
+  height: 250px;
+  width: 600px;
+  font-family: "Ubuntu";
+  font-size: 40px;
+  padding: 50px;
+  text-align: left;
+  float: left;
+  overflow: hidden;
+}
+
+@keyframes slide-animation {
+  0% {
+    right: 0px;
+  }
+  11.1% {
+    right: 0px;
+  }
+  22.2% {
+    right: 600px;
+  }
+  33.3% {
+    right: 600px;
+  }
+  44.4% {
+    right: 1200px;
+  }
+  55.5% {
+    right: 1200px;
+  }
+  66.6% {
+    right: 600px;
+  }
+  77.7% {
+    right: 600px;
+  }
+  88.8% {
+    right: 0px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
 /*Footer Design*/
 .footer-grid {
   font-size: 15px;
   font-weight: bold;
   font-family: "IBM Plex Mono", monospace;
   color: #551a8b;
-  background-color: #e0e0e0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 80px;
-  grid-template-areas:
-    "a b c"
-    "a b c"
-    "a b c";
-  clear: both;
+  background-color: #fffaf3;
+  display: inline;
   line-height: 35px;
 }
 
@@ -439,6 +478,7 @@ input[type="radio"] {
   padding: 20px;
   text-align: left;
   grid-area: c;
+  margin-bottom: 40px;
 }
 
 .footer-center {
@@ -466,63 +506,30 @@ input[type="radio"] {
   font-size: 20px;
 }
 
-/* Quotes Slideshow*/
-.quote-frame {
-  height: 150px;
-  width: 800px;
-  margin: 40px auto;
-  background-color: aquamarine;
-  border-left: 10px solid darkcyan;
-  border-right: 10px solid darkcyan;
-  overflow: hidden;
-}
-
-.quote-animation {
-  height: 150px;
-  width: 3200px;
-  position: relative;
-  -webkit-animation-name: slide-animation;
-  -webkit-animation-duration: 30s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-play-state: running;
-  -webkit-animation-direction: alternate;
-}
-
-.quote {
-  height: 150px;
-  width: 800px;
-  position: static;
-  font-family: 'Brush Script MT', 'Brush Script Std', cursive;
-  font-size: 40px;
-  padding: 20px;
-  text-align: left;
-  float: left;
-}
-
-@-webkit-keyframes slide-animation {
-  0% {right;: 0px}
-  11.1% {right: 0px}
-  22.2% {right: 800px}
-  33.3% {right: 800px}
-  44.4% {right: 1600px}
-  55.5% {right: 1600px}
-  66.6% {right: 800px}
-  77.7% {right: 800px}
-  88.8% {right: 0px}
-  100% {right: 0px}
-}
-
-/*Scrolling*/
-html {
-  scroll-behavior: smooth;
-}
-
-/*Line divider*/
-.hr1 {
-  border-top: 1px solid #170303;
-}
-
 /* Bigger screen */
+@media screen and (max-width: 600px) {
+  .main-card .cards {
+    padding-left: 25px;
+  }
+
+  .main-card .cards .card {
+    margin: 20px 0 10px 0;
+    width: 100%;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .button label {
+    display: none;
+  }
+
+  #committee-description {
+    margin-bottom: -50px;
+  }
+}
+
 @media (min-width: 600px) {
   .header-nav-link {
     display: inline;
@@ -537,6 +544,69 @@ html {
 
   .menu-btn {
     margin-top: 50px;
+  }
+
+  .main-card .cards .card {
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+
+  .button {
+    display: none;
+  }
+
+  .button label {
+    display: none;
+  }
+
+  .quote-frame {
+    height: 200px;
+  }
+
+  .quote-animation {
+    height: 150px;
+    width: 3000px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .quote {
+    height: 150px;
+    width: 1000px;
+    overflow: hidden;
+  }
+
+  @keyframes slide-animation {
+    0% {
+      right: 0px;
+    }
+    11.1% {
+      right: 0px;
+    }
+    22.2% {
+      right: 1000px;
+    }
+    33.3% {
+      right: 1000px;
+    }
+    44.4% {
+      right: 2000px;
+    }
+    55.5% {
+      right: 2000px;
+    }
+    66.6% {
+      right: 1000px;
+    }
+    77.7% {
+      right: 1000px;
+    }
+    88.8% {
+      right: 0px;
+    }
+    100% {
+      right: 0px;
+    }
   }
 }
 
@@ -575,16 +645,70 @@ html {
   .change .open {
     display: inline;
   }
-}
 
-@media (max-width: 600px) {
   .footer-grid {
-    display: inline;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 80px;
+    grid-template-areas:
+      "a b c"
+      "a b c"
+      "a b c";
+    clear: both;
+    background-color: #fffaf3;
   }
-}
 
-@media (max-width: 1000px) {
-  .footer-grid {
-    display: inline;
+  .quote-frame {
+    height: 150px;
+  }
+
+  .quote-animation {
+    height: 150px;
+    width: 5760px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .quote {
+    height: 150px;
+    width: 1920px;
+    overflow: hidden;
+  }
+
+  .main-card .cards .card {
+    width: calc(100% / 4 - 10px);
+  }
+
+  @keyframes slide-animation {
+    0% {
+      right: 0px;
+    }
+    11.1% {
+      right: 0px;
+    }
+    22.2% {
+      right: 1920px;
+    }
+    33.3% {
+      right: 1920px;
+    }
+    44.4% {
+      right: 3840px;
+    }
+    55.5% {
+      right: 3840px;
+    }
+    66.6% {
+      right: 1920px;
+    }
+    77.7% {
+      right: 1920px;
+    }
+    88.8% {
+      right: 0px;
+    }
+    100% {
+      right: 0px;
+    }
   }
 }
