@@ -383,27 +383,26 @@ input[type="radio"] {
 
 /* Quotes Slideshow*/
 .quote-frame {
-  height: auto;
-  max-width: auto;
-
+  height: 300px;
+  width: auto;
   background-color: #04bcd4;
   overflow: hidden;
 }
 
 .quote-animation {
-  height: 250px;
+  height: 300px;
   width: 1800px;
   position: relative;
+  overflow: hidden;
   animation-name: slide-animation;
   animation-duration: 30s;
   animation-iteration-count: infinite;
   animation-play-state: running;
   animation-direction: alternate;
-  overflow: hidden;
 }
 
 .quote {
-  height: 250px;
+  height: 300px;
   width: 600px;
   font-family: "Ubuntu";
   font-size: 40px;
@@ -564,14 +563,14 @@ input[type="radio"] {
   }
 
   .quote-animation {
-    height: 150px;
+    height: 200px;
     width: 3000px;
     position: relative;
     overflow: hidden;
   }
 
   .quote {
-    height: 150px;
+    height: 200px;
     width: 1000px;
     overflow: hidden;
   }
