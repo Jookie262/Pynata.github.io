@@ -1,189 +1,319 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="#">
-        <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-        <title>Pyñata | Computer Science Community</title>
-        <link rel="icon" type="image/png" href="img/Pynata Logo.svg" />
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Ubuntu:wght@400;500&display=swap" >
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-    </head>
-    <body>
-        <!-- Menu -->
-        <header>
-            <div class="menu-btn">
-                <div class="menu-btn-hamburger"></div>
-            </div>
-            <img class="header-logo" src="img/Pynata Logo.svg" alt="Pyñata Logo">
-            <img src="img/Logo Text.svg" alt="Pynata Logo Text" id="header-logo-title">
+<html lang="en">
+<head>
+    <!-- Meta Information-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon -->
+    <link rel="icon" type="image/png" href="img/Pynata Logo.svg" />
+    <!-- For Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <!-- For Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Ubuntu:wght@400;500&display=swap" >
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;600&display=swap" rel="stylesheet">
+    <!-- Css Links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+
+    <!-- Title -->
+    <title>Pyñata | Computer Science Community</title>
+
+</head>
+<body>
+
+    <div class="header-section">
+
+        <!-- Header -->
+        <div class="header navbar-light fixed-top">
+            <nav class="navbar navbar-expand-md container">
+                <a href="#" class="navbar-brand">
+                    <img src="img/Pynata Logo.svg" width="50" alt=""> 
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             
-            <ul class="nav-header">
-                <li class="nav-item">
-                    <a class="header-nav-link" href="https://pynata.github.io/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="header-nav-link" href="">Project</a>
-                </li>
-                <li class="nav-item">
-                    <a class="header-nav-link" href="">Contact</a>
-                </li>
-            </ul>
-        </header>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="#" class="nav-item nav-link">Home</a>
+                        <a href="#project-list" class="nav-item nav-link">Project</a>
+                        <a href="#meet-the-team" class="nav-item nav-link">Meet the Team</a>
+                        <a href="#contact" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- End of Header-->
         
-        <!-- Main Goals -->
-        
-        <!--Committee Member-->
-        <section id="committee-background">
-            <h2 class="section-title">Meet the team </h2>
-            <p id="committee-description"> Our committee team consists of passionate individuals from different computer science backgrounds to build a diverse computer science community.</p>
+        <div class="main-section">
             <div class="container">
-                <!--<input type="radio" name="dot" id="one">
-                <input type="radio" name="dot" id="two">-->
-                <div class="main-card">
-                  <div class="cards">
-                    <div class="card">
-                     <div class="content">
-                       <div class="ky">
-                        <img src="img/Vandyck.svg" id="committe-img-lky" alt="Vandyck Lai Kai Yong" width="200" height="200">
-                       </div>
-                       <div class="details">
-                         <div class="name">Vandyck Lai</div>
-                       </div>
-                       <div class="media-icons">
-                         <a href=" https://github.com/Laikaiyong" target="_blank"><i class="fab fa-github"></i></a>
-                         <a href=" https://www.linkedin.com/in/lai-kai-yong/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                         <a href=" https://www.instagram.com/vandyck.lai/" target="_blank"><i class="fab fa-instagram"></i></a>
-                       </div>
-                     </div>
+                <div class="row">
+                    <div class="col">
+                        <h1>Be an Active Participant!</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero perferendis autem beatae, quasi ab incidunt quo neque, odio sunt pariatur quos nobis commodi a nostrum? Consectetur quod dolorum eaque nobis.</p>
+                        <button type="button" class="btn-custom"> <b> <i class="fab fa-discord"> </i> Join the Discord </b> </button>
                     </div>
-                    <div class="card">
-                     <div class="content">
-                       <div class="img">
-                        <img src="img/Shiau Huei.svg" alt="Chang Shiau Huei" width="200" height="200">
-                       </div>
-                       <div class="details">
-                         <div class="name">Chang Shiau Huei</div>
-                       </div>
-                       <div class="media-icons">
-                        <a href="https://github.com/PLZENTERTEXT" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/chang-shiau-huei-01589a191/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/shortgun_04/" target="_blank"><i class="fab fa-instagram"></i></a>
-                       </div>
-                     </div>
+                    <div class="col">
+                        <img class="img-fluid w-100 rounded" src="img/Pynata Cover.svg" alt="">
                     </div>
-                    <div class="card">
-                     <div class="content">
-                       <div class="img">
-                        <img src="img/Zi Xian.svg" alt="Yip Zi Xian" width="200" height="200">
-                       </div>
-                       <div class="details">
-                         <div class="name">Yip Zi Xian</div>
-                       </div>
-                       <div class="media-icons">
-                        <a href="https://github.com/NightfuryEquinn" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/yip-zi-xian-a459691bb/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/nightfury_equinn/" target="_blank"><i class="fab fa-instagram"></i></a>
-                       </div>
-                     </div>
+                </div>
+            </div>
+
+            <div class="divider">
+                <svg class="editorial"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28 "
+                    preserveAspectRatio="none">
+                <defs>
+                <path id="gentle-wave"
+                d="M-160 44c30 0 
+                    58-18 88-18s
+                    58 18 88 18 
+                    58-18 88-18 
+                    58 18 88 18
+                    v44h-352z" />
+                </defs>
+                <g class="parallax1">
+                <use xlink:href="#gentle-wave" x="50" y="3" fill="#D2B3EF"/>
+                </g>
+                    <g class="parallax2">
+                <use xlink:href="#gentle-wave" x="50" y="0" fill="#BED3E8"/>
+                    </g>
+                    <g class="parallax3">
+                <use xlink:href="#gentle-wave" x="50" y="9" fill="#F87CA1"/>
+                </g>
+                    <g class="parallax4">
+                <use xlink:href="#gentle-wave" x="50" y="6" fill="#fff"/>  
+                </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div id="project-list"></div>
+    <div class="project-section container">
+        <h1>Project's List</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="cards-list">
+            <div class="card-container 1">
+              <div class="card_image"> <img src="https://cdn.dribbble.com/users/2939235/screenshots/7085112/media/5a60937babf66a0001ea7a7de8707407.png?compress=1&resize=1200x900"/> </div>
+              <div class="card_title title-white">
+                <p>Youtube Converter</p>
+                <h6>
+                    <span class="badge badge-dark">Github</span>
+                    <span class="badge badge-primary">Python</span>
+                </h6>
+
+              </div>
+            </div> 
+            
+            <div class="card-container 1">
+                <div class="card_image"> <img src="https://cdn.dribbble.com/users/1519660/screenshots/4914467/tesla.png?compress=1&resize=800x600"/> </div>
+                <div class="card_title title-white">
+                  <p>Online Car Rental</p>
+                  <h6>
+                    <span class="badge badge-dark">Github</span>
+                    <span class="badge badge-primary">Python</span>
+                </h6>
+                </div>
+            </div>   
+
+            <div class="card-container 1">
+                <div class="card_image"> <img src="https://cdn.dribbble.com/users/997338/screenshots/11077007/media/656b1c7e80e91f8e446b7975555ccbb7.png?compress=1&resize=1200x900"/> </div>
+                <div class="card_title title-black">
+                  <p>KYGorGor Bot</p>
+                  <h6>
+                    <span class="badge badge-dark">Github</span>
+                    <span class="badge badge-primary">Python</span>
+                    <span class="badge badge-info">Discord</span>
+
+                </h6>
+                </div>
+            </div>   
+
+            <div class="card-container 1">
+                <div class="card_image"> <img src="https://cdn.dribbble.com/users/3455524/screenshots/8065649/media/079e4161f578b2dd45a01468bf579cc0.png?compress=1&resize=1200x900"/> </div>
+                <div class="card_title title-white">
+                  <p>Password Generator</p>
+                  <h6>
+                    <span class="badge badge-dark">Github</span>
+                    <span class="badge badge-info">Python</span>
+                </h6>
+                </div>
+            </div>  
+            
+            <div class="card-container 1">
+                <div class="card_image"> <img src="https://cdn.dribbble.com/users/490738/screenshots/16154213/media/380539cb56c850758edb84d19bf49039.png?compress=1&resize=1200x900"/> </div>
+                <div class="card_title title-white">
+                  <p>Meme Generator</p>
+                  <h6>
+                    <span class="badge badge-dark">Github</span>
+                    <span class="badge badge-info">Python</span>
+                </h6>
+                </div>
+            </div>  
+
+        </div>
+    </div>
+
+    <div class="meet-the-team-section" id="meet-the-team">
+        <div class="container">
+            <h1>Meet the Team</h1>
+            <p>Our committee team consists of passionate individuals from different computer science backgrounds to build a diverse computer science community.
+            </p>
+
+            <div class="meet-card-container">
+                <div class="meet-card">
+                    <div class="meet-card-img">
+                        <img src="img/kai.jpg">
                     </div>
-                    <div class="card">
-                      <div class="content">
-                        <div class="img">
-                          <img src="img/Cheryl.svg" alt="Lim Wye Yee" width="200" height="200">
+                    <div class="desc">
+                        <h5 class="primary-text">Vandyck Lai</h5>
+                        <div class="d-inline">
+                            <a href=" https://github.com/Laikaiyong" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href=" https://www.linkedin.com/in/lai-kai-yong/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href=" https://www.instagram.com/vandyck.lai/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
-                        <div class="details">
-                          <div class="name">Cheryl Lim</div>
+                    </div>
+                </div>
+
+                <div class="meet-card">
+                    <div class="meet-card-img">
+                        <img src="img/Chang.jpg">
+                    </div>
+                    <div class="desc">
+                        <h5 class="primary-text">Chang Shiau Huei</h5>
+                        <div class="d-inline">
+                            <a href="https://github.com/PLZENTERTEXT" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/chang-shiau-huei-01589a191/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/shortgun_04/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
-                        <div class="media-icons">
-                        <a href="https://github.com/bipolarpineapple" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/lim-wye-yee-026717202/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/cherrycake.exe/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="meet-card">
+                    <div class="meet-card-img">
+                        <img src="img/Yip.jpg">
+                    </div>
+                    <div class="desc">
+                        <h5 class="primary-text">Yip Zi Xian</h5>
+                        <div class="d-inline">
+                            <a href="https://github.com/NightfuryEquinn" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/yip-zi-xian-a459691bb/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/nightfury_equinn/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
+                    </div>
+                </div>
+
+                <div class="meet-card">
+                    <div class="meet-card-img">
+                        <img src="img/Cheryl.jpg">
+                    </div>
+                    <div class="desc">
+                        <h5 class="primary-text">Cheryl Lim</h5>
+                        <div class="d-inline">
+                            <a href="https://github.com/bipolarpineapple" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/lim-wye-yee-026717202/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/cherrycake.exe/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-us" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Contact Us</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dolorem laboriosam esse rerum corrupti velit</p>
+                    <img class="img-fluid w-100" src="https://cdn.dribbble.com/users/721536/screenshots/3429188/unicorn_outilne.jpg?compress=1&resize=800x600" alt="">
+                </div>
+                <div class="col">
+                    <form class="contact100-form validate-form">
+                        <div class="wrap-input100 validate-input">
+                            <input class="input100" type="text" name="name" placeholder="Full Name">
+                            <span class="focus-input100"></span>
+                        </div>
+                        <div class="wrap-input100 validate-input">
+                            <input class="input100" type="text" name="email" placeholder="Email">
+                            <span class="focus-input100"></span>
+                        </div>
+                        <div class="wrap-input100 validate-input">
+                            <textarea class="input100" name="message" placeholder="Your Message"></textarea>
+                            <span class="focus-input100"></span>
+                        </div>
+                        <div class="container-contact100-form-btn">
+                            <button class="contact100-form-btn"><i class="far fa-paper-plane"></i> Send Email</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <div class="container">
+
+            <div class="slide">        
+                <div id="carouselExampleControls" class="carousel slide container" data-ride="carousel">
+                    <div class="carousel-inner text-center">
+                      <div class="carousel-item active ">
+                        <h1> First, solve the problem. Then, write the code.</h1>
+                        <cite> – John Johnson</cite>
+                      </div>
+                      <div class="carousel-item">
+                        <h1>In order to be irreplaceable, one must always be different</h1>
+                        <cite> – Coco Chanel</cite>
+                      </div>
+                      <div class="carousel-item">
+                        <h1>Code is like humor. When you have to explain it, it’s bad.</h1>
+                        <cite> – Cory House</cite>
                       </div>
                     </div>
-                  </div>
+                </div>      
+            </div>
+
+            <div class="footer-links">
+                <div class="row">
+                    <div class="col">
+                        <h5>About Pyñata</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vel, numquam expedita fuga beatae architecto odio consequuntur iure earum vero perferendis explicabo labore ipsum accusamus, ea, qui amet deleniti perspiciatis?</p>
+                        <hr>
+                        <p><i class="fas fa-trophy"></i>  Our Goals</p>
+                        <p> <i class="fas fa-users"></i>  Core Team</p>
+                    </div>
+                    <div class="col">
+                        <h5>Pyñata Community</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vel, numquam expedita</p>
+                        <hr>
+                        <p> <i class="fab fa-discord"></i> Discord Server: Join us</p>
+                    </div>
+                    <div class="col">
+                        <h5>Contact Information</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vel, numquam expedita fuga beatae</p>
+                        <hr>
+                        <p> <i class="fa fa-envelope-open" aria-hidden="true"></i> Email: pynatacore@gmail.com</p>
+                    </div>
                 </div>
-                <!--<div class="button">
-                  <label for="one" class=" active one"></label>
-                  <label for="two" class="two"></label>
-                </div>-->
             </div>
-          </section>
-        
-
-        <!--Quote-->
-        <div class='quote-frame'>
-          <div class='quote-animation'>
-            <blockquote class='quote'>
-              <q>
-                First, solve the problem. Then, write the code.
-              </q>
-              <cite> – John Johnson</cite>
-            </blockquote>
-            <blockquote class='quote'>
-              <q>
-                In order to be irreplaceable, one must always be different
-              </q>
-              <cite> – Coco Chanel</cite>
-            </blockquote>
-            <blockquote class='quote'>
-              <q>
-                Code is like humor. When you have to explain it, it’s bad.
-              </q>
-              <cite> – Cory House</cite>
-            </blockquote>
-          </div>
         </div>
 
-        <!--Footer-->
-        <footer class='footer-grid'>
-          <div class='footer-left'>
-            <div class='footer-title'>
-              <hr>
-              <p>About Pyñata</p>
-              <hr>
-            </div>
-            <p>
-              <i class="fas fa-trophy"></i> 
-              <a class='footer-link' href='#community'>Our Goals</a>
-            </p>
-            <p>
-              <i class="fas fa-users"></i> 
-              <a class='footer-link' href='#member'>Core Team</a>
-            </p>
-          </div>
-
-          <div class='footer-middle'>
-            <div class='footer-title'>
-                <hr>
-                <p>Pyñata Community</p>
-                <hr>
-            </div>
-            <p>
-              <i class="fab fa-discord"></i> 
-              Discord Server: 
-              <a class='footer-link' href='https://discord.gg/fxPr86c5E9'>Join us</a>
-            </p>
-          </div>
-          
-          <div class='footer-right'>
-            <div class='footer-title'>
-              <hr>
-              <p>Contact us</p>   
-              <hr>
-            </div>
-            <p>
-              <i class="fa fa-envelope-open" aria-hidden="true"></i> Community Email: 
-              <a class='footer-link' href='mailto:pynatacore@gmail.com'>pynatacore@gmail.com</a></p>
-          </div>
+        <div class="copyright text-center">
+            <h6>Copyright © 2021 <b>Pyñata Core Team</b> and <b>Jookie262</b>. All Rights Reserved.</h6>
         </div>
-      </footer>
-      <div class='footer-cr'>
-        <p>Copyright &copy 2021 Pyñata Core Team. All Rights Reserved.</p>
-      </div>
-      <script src="script.js"></script>
-    </body>
+    </div>
+    
+   
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
 </html>
-
