@@ -225,6 +225,10 @@ button:hover {
   }
 }
 
+.meet-team-text {
+  text-align: center;
+}
+
 .meet-the-team-section {
   background: url(https://cdn.dribbble.com/users/2399335/screenshots/14689261/d_glass-morphism_card_1080p_4x.png);
   background-repeat: no-repeat;
