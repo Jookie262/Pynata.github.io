@@ -39,10 +39,23 @@
             
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="#" class="nav-item nav-link">Home</a>
-                        <a href="#project-list" class="nav-item nav-link">Project</a>
-                        <a href="#meet-the-team" class="nav-item nav-link">Meet the Team</a>
-                        <a href="#contact" class="nav-item nav-link">Contact Us</a>
+                        <a href="#" class="nav-item nav-link">
+                          <p class="nav-text">Home</p>
+                        </a>
+                        <a href="#project-list" class="nav-item nav-link">
+                          <p class="nav-text">
+                            Project
+                          </p>
+                        </a>
+                        <a href="#meet-the-team" class="nav-item nav-link">
+                          <p class="nav-text">
+                            Meet the Team
+                          </p></a>
+                        <a href="#contact" class="nav-item nav-link">
+                          <p class="nav-text">
+                          Contact Us
+                          </p>
+                        </a>
                     </div>
                 </div>
             </nav>
@@ -54,8 +67,12 @@
                 <div class="row">
                     <div class="col">
                         <h1>Be an Active Participant!</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero perferendis autem beatae, quasi ab incidunt quo neque, odio sunt pariatur quos nobis commodi a nostrum? Consectetur quod dolorum eaque nobis.</p>
-                        <button type="button" class="btn-custom"> <b> <i class="fab fa-discord"> </i> Join the Discord </b> </button>
+                        <p class="description">
+                          A server for everyone who love computer science related topics where we share learning resources, events and discuss on IT related topics.
+                        </p>
+                        <a href="https://discord.gg/fxPr86c5E9" target="_blank">
+                          <button type="button" class="btn-custom"> <b> <i class="fab fa-discord"> </i> Join the Discord </b> </button>
+                        </a>
                     </div>
                     <div class="col">
                         <img class="img-fluid w-100 rounded" src="img/Pynata Cover.svg" alt="">
@@ -97,9 +114,10 @@
     <div id="project-list"></div>
     <div class="project-section container">
         <h1>Project's List</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="project_desc" class="description">Pyñata Team related Project</p>
 
         <div class="cards-list">
+          <a class="project_link" href="https://github.com/Pynata/02-Youtube-Converter" target="_blank">
             <div class="card-container 1">
               <div class="card_image"> <img src="https://cdn.dribbble.com/users/2939235/screenshots/7085112/media/5a60937babf66a0001ea7a7de8707407.png?compress=1&resize=1200x900"/> </div>
               <div class="card_title title-white">
@@ -107,22 +125,29 @@
                 <h6>
                     <span class="badge badge-dark">Github</span>
                     <span class="badge badge-primary">Python</span>
+                    <span class="badge badge-warning">In Progress</span>
                 </h6>
 
               </div>
             </div> 
+          </a>
             
+            
+          <a href="https://github.com/Laikaiyong/Van-Paradise"  target="_blank" class="project_link">
             <div class="card-container 1">
-                <div class="card_image"> <img src="https://cdn.dribbble.com/users/1519660/screenshots/4914467/tesla.png?compress=1&resize=800x600"/> </div>
-                <div class="card_title title-white">
-                  <p>Online Car Rental</p>
-                  <h6>
-                    <span class="badge badge-dark">Github</span>
-                    <span class="badge badge-primary">Python</span>
-                </h6>
-                </div>
-            </div>   
-
+              <div class="card_image"> <img src="https://cdn.dribbble.com/users/281679/screenshots/14897126/media/f52c47307ac2daa0c727b1840c41d5ab.png?compress=1&resize=1000x750"/> </div>
+              <div class="card_title title-black">
+                <p>Van Paradise</p>
+                <h6>
+                  <span class="badge badge-dark">Github</span>
+                  <span class="badge badge-primary">Python</span>
+                  <span class="badge badge-info">Discord</span>
+              </h6>
+              </div>
+            </div>  
+          </a>
+          
+          <a href="https://github.com/Laikaiyong/KY-Gor-Gor-Bot"  target="_blank" class="project_link">
             <div class="card-container 1">
                 <div class="card_image"> <img src="https://cdn.dribbble.com/users/997338/screenshots/11077007/media/656b1c7e80e91f8e446b7975555ccbb7.png?compress=1&resize=1200x900"/> </div>
                 <div class="card_title title-black">
@@ -134,29 +159,45 @@
 
                 </h6>
                 </div>
-            </div>   
+            </div>
+          </a>   
 
+          <a href="https://github.com/Pynata/04-RPG-Game"  target="_blank" class="project_link">
             <div class="card-container 1">
-                <div class="card_image"> <img src="https://cdn.dribbble.com/users/3455524/screenshots/8065649/media/079e4161f578b2dd45a01468bf579cc0.png?compress=1&resize=1200x900"/> </div>
-                <div class="card_title title-white">
-                  <p>Password Generator</p>
+                <div class="card_image"> <img src="https://cdn.dribbble.com/users/989466/screenshots/6639761/canopy-two-dots-rpg-map-drib-crop-volcanic-_2x_4x.png?compress=1&resize=1200x900"/> </div>
+                <div class="card_title title-black">
+                  <p>RPG Game</p>
                   <h6>
                     <span class="badge badge-dark">Github</span>
-                    <span class="badge badge-info">Python</span>
+                    <span class="badge badge-warning">In Progress</span>
                 </h6>
                 </div>
             </div>  
-            
+          </a>
+          <a href="https://github.com/Pynata/03-Ads-Blocker"  target="_blank" class="project_link">
             <div class="card-container 1">
-                <div class="card_image"> <img src="https://cdn.dribbble.com/users/490738/screenshots/16154213/media/380539cb56c850758edb84d19bf49039.png?compress=1&resize=1200x900"/> </div>
-                <div class="card_title title-white">
-                  <p>Meme Generator</p>
+                <div class="card_image"> <img src="https://getadblock.com/images/platforms/firefox/firefox_hero_image_exportable.svg?v=da2b0808"/> </div>
+                <div class="card_title title-black">
+                  <p>Ads Blocker</p>
                   <h6>
                     <span class="badge badge-dark">Github</span>
-                    <span class="badge badge-info">Python</span>
+                    <span class="badge badge-warning">In Progress</span>
                 </h6>
                 </div>
-            </div>  
+            </div> 
+          </a> 
+          <a href="https://github.com/Pynata/05-Social-Media-App"  target="_blank" class="project_link">
+            <div class="card-container 1">
+                <div class="card_image"> <img src="https://cdn.dribbble.com/users/2328616/screenshots/14045548/media/91c7bc53eb3d1015efd1e543ee2c33a5.png?compress=1&resize=1200x900"/> </div>
+                <div class="card_title title-black">
+                  <p>Social Media App</p>
+                  <h6>
+                    <span class="badge badge-dark">Github</span>
+                    <span class="badge badge-warning">In Progress</span>
+                </h6>
+                </div>
+            </div> 
+          </a> 
 
         </div>
     </div>
@@ -164,8 +205,10 @@
     <div class="meet-the-team-section" id="meet-the-team">
         <div class="container">
             <h1>Meet the Team</h1>
-            <p>Our committee team consists of passionate individuals from different computer science backgrounds to build a diverse computer science community.
+            <p class="description">Our committee team consists of passionate individuals from different computer science backgrounds to build a diverse computer science community.
             </p>
+
+            
 
             <div class="meet-card-container">
                 <div class="meet-card">
@@ -212,7 +255,7 @@
 
                 <div class="meet-card">
                     <div class="meet-card-img">
-                        <img src="img/Cheryl.jpg">
+                        <img src="img/Cheryl.svg">
                     </div>
                     <div class="desc">
                         <h5 class="primary-text">Cheryl Lim</h5>
@@ -224,6 +267,20 @@
                     </div>
                 </div>
             </div>
+            <!-- <div class="meet-card-container">
+              <div class="meet-card">
+                  <div class="meet-card-img">
+                      <img src="img/jolou.jpg">
+                  </div>
+                  <div class="desc">
+                      <h5 class="primary-text">Jolou</h5>
+                      <div class="d-inline">
+                          <a href=" https://github.com/Jookie262" target="_blank"><i class="fab fa-github"></i></a>
+                          <a href=" https://www.linkedin.com/in/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                          <a href=" https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                      </div>
+                  </div>
+              </div> -->
         </div>
     </div>
 
@@ -232,7 +289,7 @@
             <div class="row">
                 <div class="col">
                     <h1>Contact Us</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dolorem laboriosam esse rerum corrupti velit</p>
+                    <p class="description">Contact us if you have any suggestion / feedback.</p>
                     <img class="img-fluid w-100" src="https://cdn.dribbble.com/users/721536/screenshots/3429188/unicorn_outilne.jpg?compress=1&resize=800x600" alt="">
                 </div>
                 <div class="col">
@@ -284,22 +341,24 @@
                 <div class="row">
                     <div class="col">
                         <h5>About Pyñata</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vel, numquam expedita fuga beatae architecto odio consequuntur iure earum vero perferendis explicabo labore ipsum accusamus, ea, qui amet deleniti perspiciatis?</p>
+                        <p class="description">A discord server serves as a computer scinece community for people to engage, chat and share knowledge together.</p>
                         <hr>
                         <p><i class="fas fa-trophy"></i>  Our Goals</p>
                         <p> <i class="fas fa-users"></i>  Core Team</p>
                     </div>
                     <div class="col">
                         <h5>Pyñata Community</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vel, numquam expedita</p>
+                        <p class="description">Join us if you want to learn something new or get latest news on Computer Science related topics</p>
                         <hr>
                         <p> <i class="fab fa-discord"></i> Discord Server: Join us</p>
                     </div>
                     <div class="col">
                         <h5>Contact Information</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vel, numquam expedita fuga beatae</p>
+                        <p class="description">Contact us via email</p>
                         <hr>
+                        <a class="no-style" href="mailto:pynatacore@gmail.com">
                         <p> <i class="fa fa-envelope-open" aria-hidden="true"></i> Email: pynatacore@gmail.com</p>
+                      </a>
                     </div>
                 </div>
             </div>
