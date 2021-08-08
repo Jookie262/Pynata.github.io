@@ -7,7 +7,7 @@ html {
   scroll-behavior: smooth;
 }
 
-button,
+/* button,
 button:active,
 button:focus,
 a:active,
@@ -15,7 +15,7 @@ a:focus {
   outline: 0 !important;
   border: none !important;
   /* -moz-outline-style: none !important; */
-}
+} */
 
 button:hover {
   cursor: pointer;
@@ -494,7 +494,7 @@ textarea.input100 {
   padding: 15px 0;
 }
 
-@media screen and (min-width: 990px) {
+@media (min-width: 990px) {
   .nav-text {
     font-size: 18px;
   }
