@@ -5,20 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Icon -->
     <link rel="icon" type="image/png" href="img/Pynata Logo.svg" />
+
     <!-- For Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+
     <!-- For Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Ubuntu:wght@400;500&display=swap" >
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;600&display=swap" rel="stylesheet">
+    
     <!-- Css Links -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
-
     <!-- Title -->
     <title>Pyñata | Computer Science Community</title>
 
@@ -38,24 +41,11 @@
                 </button>
             
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto">
-                        <a href="#" class="nav-item nav-link">
-                          <p class="nav-text">Home</p>
-                        </a>
-                        <a href="#project-list" class="nav-item nav-link">
-                          <p class="nav-text">
-                            Project
-                          </p>
-                        </a>
-                        <a href="#meet-the-team" class="nav-item nav-link">
-                          <p class="nav-text">
-                            Meet the Team
-                          </p></a>
-                        <a href="#contact" class="nav-item nav-link">
-                          <p class="nav-text">
-                          Contact Us
-                          </p>
-                        </a>
+                    <div class="navbar-nav ml-auto nav-links">
+                        <a href="#" class="nav-item nav-link">Home</a>
+                        <a href="#project-list" class="nav-item nav-link">Project</a>
+                        <a href="#meet-the-team" class="nav-item nav-link">Meet the Team</a>
+                        <a href="#contact" class="nav-item nav-link">Contact Us</a>
                     </div>
                 </div>
             </nav>
@@ -116,89 +106,12 @@
         <h1>Project's List</h1>
         <p id="project_desc" class="description">Pyñata Team related Project</p>
 
-        <div class="cards-list">
-          <a class="project_link" href="https://github.com/Pynata/02-Youtube-Converter" target="_blank">
-            <div class="card-container 1">
-              <div class="card_image"> <img src="https://cdn.dribbble.com/users/2939235/screenshots/7085112/media/5a60937babf66a0001ea7a7de8707407.png?compress=1&resize=1200x900"/> </div>
-              <div class="card_title title-white">
-                <p>Youtube Converter</p>
-                <h6>
-                    <span class="badge badge-dark">Github</span>
-                    <span class="badge badge-primary">Python</span>
-                    <span class="badge badge-warning">In Progress</span>
-                </h6>
+        <!-- Cards Here -->
+        <div class="cards-list"></div>
 
-              </div>
-            </div> 
-          </a>
-            
-            
-          <a href="https://github.com/Laikaiyong/Van-Paradise"  target="_blank" class="project_link">
-            <div class="card-container 1">
-              <div class="card_image"> <img src="https://cdn.dribbble.com/users/281679/screenshots/14897126/media/f52c47307ac2daa0c727b1840c41d5ab.png?compress=1&resize=1000x750"/> </div>
-              <div class="card_title title-black">
-                <p>Van Paradise</p>
-                <h6>
-                  <span class="badge badge-dark">Github</span>
-                  <span class="badge badge-primary">Python</span>
-                  <span class="badge badge-info">Discord</span>
-              </h6>
-              </div>
-            </div>  
-          </a>
-          
-          <a href="https://github.com/Laikaiyong/KY-Gor-Gor-Bot"  target="_blank" class="project_link">
-            <div class="card-container 1">
-                <div class="card_image"> <img src="https://cdn.dribbble.com/users/997338/screenshots/11077007/media/656b1c7e80e91f8e446b7975555ccbb7.png?compress=1&resize=1200x900"/> </div>
-                <div class="card_title title-black">
-                  <p>KYGorGor Bot</p>
-                  <h6>
-                    <span class="badge badge-dark">Github</span>
-                    <span class="badge badge-primary">Python</span>
-                    <span class="badge badge-info">Discord</span>
-
-                </h6>
-                </div>
-            </div>
-          </a>   
-
-          <a href="https://github.com/Pynata/04-RPG-Game"  target="_blank" class="project_link">
-            <div class="card-container 1">
-                <div class="card_image"> <img src="https://cdn.dribbble.com/users/989466/screenshots/6639761/canopy-two-dots-rpg-map-drib-crop-volcanic-_2x_4x.png?compress=1&resize=1200x900"/> </div>
-                <div class="card_title title-black">
-                  <p>RPG Game</p>
-                  <h6>
-                    <span class="badge badge-dark">Github</span>
-                    <span class="badge badge-warning">In Progress</span>
-                </h6>
-                </div>
-            </div>  
-          </a>
-          <a href="https://github.com/Pynata/03-Ads-Blocker"  target="_blank" class="project_link">
-            <div class="card-container 1">
-                <div class="card_image"> <img src="https://getadblock.com/images/platforms/firefox/firefox_hero_image_exportable.svg?v=da2b0808"/> </div>
-                <div class="card_title title-black">
-                  <p>Ads Blocker</p>
-                  <h6>
-                    <span class="badge badge-dark">Github</span>
-                    <span class="badge badge-warning">In Progress</span>
-                </h6>
-                </div>
-            </div> 
-          </a> 
-          <a href="https://github.com/Pynata/05-Social-Media-App"  target="_blank" class="project_link">
-            <div class="card-container 1">
-                <div class="card_image"> <img src="https://cdn.dribbble.com/users/2328616/screenshots/14045548/media/91c7bc53eb3d1015efd1e543ee2c33a5.png?compress=1&resize=1200x900"/> </div>
-                <div class="card_title title-black">
-                  <p>Social Media App</p>
-                  <h6>
-                    <span class="badge badge-dark">Github</span>
-                    <span class="badge badge-warning">In Progress</span>
-                </h6>
-                </div>
-            </div> 
-          </a> 
-
+        <!-- Modal For Cards-->
+        <div class="modal-card">
+           
         </div>
     </div>
 
@@ -207,8 +120,6 @@
             <h1 class="meet-team-text">Meet the Team</h1>
             <p class="description meet-team-text">Our committee team consists of passionate individuals from different computer science backgrounds to build a diverse computer science community.
             </p>
-
-            
 
             <div class="meet-card-container">
                 <div class="meet-card">
@@ -373,6 +284,7 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script src="project.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
