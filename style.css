@@ -227,6 +227,14 @@ button:hover {
   padding: 0 15%;
 }
 
+.button-center {
+  text-align: center;
+}
+
+.meet-button-section {
+  margin: 50px 0;
+}
+
 .meet-the-team-section {
   background: url(https://cdn.dribbble.com/users/2399335/screenshots/14689261/d_glass-morphism_card_1080p_4x.png);
   background-repeat: no-repeat;
@@ -245,6 +253,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
+  display: none;
 }
 
 .meet-card {
@@ -507,7 +516,6 @@ textarea.input100 {
   }
 }
 
-
 .modal-content {
   position: relative;
   border: none !important;
@@ -538,12 +546,12 @@ textarea.input100 {
   left: 0;
 }
 
-.project-title h3{
+.project-title h3 {
   font-size: 32px;
   font-weight: 800;
   padding-left: 45px;
-  text-shadow: #000 0px 0px 2.5px,   #000 0px 0px 2.5px,   #000 0px 0px 2.5px,
-  #000 0px 0px 2.5px, #000 0px 0px 2.5px, #000 0px 0px 2.5px;
+  text-shadow: #000 0px 0px 2.5px, #000 0px 0px 2.5px, #000 0px 0px 2.5px,
+    #000 0px 0px 2.5px, #000 0px 0px 2.5px, #000 0px 0px 2.5px;
 }
 
 .project-title button {
