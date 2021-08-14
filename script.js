@@ -74,7 +74,6 @@ $(document).ready(function(){
         let arr_index = project_list[index];
         $('.modal-card').html(addModal(arr_index.Name, arr_index.ModalColor, arr_index.Link, arr_index.Image, arr_index.Description, arr_index.Version, arr_index.Badges));
     })
-
 });
 
 // Meet the team section
@@ -85,7 +84,7 @@ function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("meet-card-container");
     for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
+      x[i].style.display = "none"; 
     }
-    x[n].style.display = "block"; 
+    x[n].style.display = "flex"; 
 }
