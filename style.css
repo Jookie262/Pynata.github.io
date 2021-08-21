@@ -161,6 +161,10 @@ button:hover {
     flex-direction: column;
     justify-content: center;
   }
+  #discord-widget{
+    width:200;
+    height: 400;
+  }
 }
 
 .editorial {
