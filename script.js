@@ -1,4 +1,4 @@
-function addProject(name, color, image, link, badges){
+function addProject(name, color, image, link, badges) {
     $('.cards-list').append(`
         <a class="project_link" href="#" target="_blank" data-toggle="modal" data-target="#ModalCard">
             <div class="card-container 1">
@@ -17,7 +17,7 @@ function addProject(name, color, image, link, badges){
     `);
 }
 
-function addModal(name, colortext, link, image, description, version, badges){
+function addModal(name, colortext, link, image, description, version, badges) {
     return `
         <div class="modal fade bd-example-modal-lg" id="ModalCard" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
@@ -32,9 +32,9 @@ function addModal(name, colortext, link, image, description, version, badges){
                                 <div class="col-md-8">  
                                     <h3 style="color: white">${name}</h3>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 text-center">
                                     <a href="${link}" target="_blank">
-                                        <button type="button" class="btn-custom"> <b> <i class="fab fa-discord"> </i> View in Github </b> </button>
+                                        <button type="button" class="btn-custom"> <b> <i class="fab fa-github"> </i> View in Github </b> </button>
                                     </a>
                                 </div>
                             </div>
@@ -64,12 +64,12 @@ function addModal(name, colortext, link, image, description, version, badges){
     `;
 }
 
-$(document).ready(function(){
+$(document).ready(function () {
     project_list.forEach((item) => {
         addProject(item.Name, item.ModalColor, item.Image, item.Link, item.Badges);
     });
 
-    $('.project_link').click(function(){
+    $('.project_link').click(function () {
         let index = $(this).index();
         let arr_index = project_list[index];
         $('.modal-card').html(addModal(arr_index.Name, arr_index.ModalColor, arr_index.Link, arr_index.Image, arr_index.Description, arr_index.Version, arr_index.Badges));
@@ -84,7 +84,7 @@ function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("meet-card-container");
     for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
+        x[i].style.display = "none";
     }
-    x[n].style.display = "flex"; 
+    x[n].style.display = "flex";
 }
