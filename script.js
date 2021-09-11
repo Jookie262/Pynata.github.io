@@ -88,3 +88,12 @@ function showDivs(n) {
     }
     x[n].style.display = "flex";
 }
+
+function validate() {
+    if (!form_valid) {
+        alert('Given data is not correct');
+        return false;
+    }
+    alert('Submitted, thank you for your feedback');
+    return true;
+}
